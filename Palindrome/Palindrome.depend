@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1665178561 source:d:\c\leetcode\palindrome\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
