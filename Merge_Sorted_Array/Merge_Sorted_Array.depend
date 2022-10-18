@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1659452273 source:d:\c\sorting-algorithms\bubble_sort\bubble_sort.c
-	<math.h>
-	<stdio.h>
-	"Bubble_Sort.h"
-
-1659451973 d:\c\sorting-algorithms\bubble_sort\bubble_sort.h
-
