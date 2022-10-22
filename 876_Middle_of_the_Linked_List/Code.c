@@ -72,3 +72,42 @@ struct ListNode* middleNode(struct ListNode* head)
 Runtime: 0 ms, faster than 100.00% of C online submissions for Middle of the Linked List.
 Memory Usage: 5.8 MB, less than 80.38% of C online submissions for Middle of the Linked List.
 */
+
+
+/****************************************************************************************************************/
+
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* middleNode(struct ListNode* head)
+{
+    struct ListNode* doubleStepsList = head;
+    struct ListNode* singleStepList = head;
+    
+    while(doubleStepsList != NULL)
+    {
+        if(doubleStepsList->next != NULL)
+        {
+            doubleStepsList = doubleStepsList->next->next;
+            singleStepList = singleStepList->next;
+        }
+        else
+        {
+            doubleStepsList = doubleStepsList->next;
+        }
+    }
+    
+    return singleStepList;
+}
+
+/*
+Runtime: 3 ms, faster than 45.75% of C online submissions for Middle of the Linked List.
+Memory Usage: 6 MB, less than 38.12% of C online submissions for Middle of the Linked List.
+*/
