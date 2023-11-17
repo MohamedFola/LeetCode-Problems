@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -10,7 +9,7 @@ public:
         string result;
         int direction = -1, iterator = 0;
 
-        vector<string>v( numRows, "" );
+        string results[ numRows ] = { "" };
 
         if ( numRows == 1 || numRows == 0 ) return s;
 
@@ -21,7 +20,7 @@ public:
                 direction *= -1;
             }
 
-            v[iterator] += s[ i ];
+            results[iterator] += s[ i ];
 
             if ( direction == 1 )
             {
@@ -33,7 +32,7 @@ public:
             }
         }
 
-        for ( auto &it:v )
+        for ( auto &it:results )
         {
             result += it;
         }
