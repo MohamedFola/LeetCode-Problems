@@ -1,0 +1,24 @@
+Bit Manipulation:
+
+the main idea here is that xoring anything by itself will give 0 and xoring anything with 0 will give the same number
+for example: 
+a ^ a = 0
+a ^ 0 = a
+
+so it is expected for xoring any element that is duplicated to give 0 and xoring 0 with the element that has no duplication will give the same element,
+and returnig this element will be the desired answer.
+
+example:
+vector = [4,4,5]
+result = 0
+
+first loop:
+result ^= 4 -> result = 0 ^ 4 = 4
+
+second loop:
+result ^= 4 -> result = 4 ^ 4 = 0
+
+third loop:
+result ^= 5 -> result = 0 ^ 5 = 5
+
+then return the result.

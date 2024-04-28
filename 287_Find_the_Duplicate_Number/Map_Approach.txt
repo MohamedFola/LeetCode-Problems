@@ -6,7 +6,7 @@ Map approach:
 3) iterate over the vector and add the key to the map and increment the value and check if the value is greater than 1 then this key is repeated in the vector
 
 example:
-vector = 5 2 3 3 0 9
+vector = 5 2 3 3 1 4 
 
 first loop:
 map -> {5,1}

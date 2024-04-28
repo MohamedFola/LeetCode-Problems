@@ -1,0 +1,32 @@
+Map approach:
+
+create a map with int keys and int values
+map<int, int>m;
+
+key -> elements of the vector
+value -> number of repetitions of this key
+
+loop throught the vector and add to the map the key and increment the value.
+once you finish looping throught all elements of the vector, loop throught elements of the map and check the value.
+
+if m.second is less than 2 then this is the desired value.
+
+example:
+1) looping throught vector elements
+vector = [4,4,5]
+
+first loop:
+map = {4,1}
+
+second loop:
+map = {4,2}
+
+third loop:
+map = {4,2}, {5,1}
+
+2) looping throught map elements
+first loop:
+value of key 4 is 2, is  2 < 2 ?? -> no
+
+second loop:
+value of key 5 is 1, is 1 < 2 -> yes then return 5
