@@ -1,9 +1,2 @@
-# Ignore Bazel cache in the home directory
-/cache
-# Ignore Bazel output directories
-/Projects/bazel-bin
-/Projects/bazel-out
-/Projects/bazel-testlogs
-/Projects/bazel-*
 # Ignore .vscode folders
-.vscode/
+*.vscode/
